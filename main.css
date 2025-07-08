@@ -1,102 +1,108 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* --- Google Font --- */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
-  padding: 0;
   background-color: #fffafc;
   color: #333;
 }
 
-/* Header */
+/* --- Header --- */
 header {
-  background-color: #ffe0e9; /* pastel pink */
+  background-color: #ffe0f0;
   padding: 20px;
   text-align: center;
-  border-bottom: 2px solid #fbb1bd;
+  border-bottom: 2px solid #fcbfd8;
 }
 
 header h1 {
-  color: #d94f70;
+  margin: 0;
+  color: #d45c8e;
+  font-size: 36px;
 }
 
-/* Container Layout (float + clear) */
+/* --- Layout using float and clear --- */
 .container {
-  overflow: auto; /* clearing floats */
+  overflow: auto;
 }
 
-/* Sidebar using float */
 .sidebar {
   float: left;
   width: 25%;
-  background-color: #d0f4de; /* pastel green */
   padding: 20px;
   box-sizing: border-box;
+  background-color: #d0f4de;
   border-right: 2px solid #a0e4b0;
 }
 
-.sidebar h2 {
-  color: #379683;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
+/* Descendant selector */
 .sidebar ul li {
-  padding: 10px;
-  border-bottom: 1px solid #a0e4b0;
+  margin: 10px 0;
+  color: #2d6a4f;
 }
 
-.sidebar ul li:hover {
-  background-color: #b8f2e6;
-  cursor: pointer;
+/* Styled links with pseudo-classes */
+.sidebar a {
+  color: #287271;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Main Content using float */
+.sidebar a:hover {
+  color: #1c4e4c;
+  text-decoration: underline;
+}
+
+/* --- Main Content with Background Image --- */
 .main-content {
   float: left;
   width: 75%;
-  background-color: #f0eaff; /* pastel lavender */
   padding: 20px;
   box-sizing: border-box;
+  background-color: #f0eaff;
+  background-image: url('images/pastel-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: lighten;
 }
 
-/* Goal boxes - border, padding, dimension */
-.goal-box {
-  background-color: #faf4ff; /* light pastel purple */
+/* --- Bucket List Boxes --- */
+.bucket-item {
   border: 2px dashed #dab6fc;
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 15px;
   margin-bottom: 20px;
-  border-radius: 12px;
+  border-radius: 10px;
   width: 90%;
 }
 
-/* Child selector - pastel accent */
-.main-content > .goal-box h3 {
-  color: #a364a1;
+/* Child selector */
+.main-content > .bucket-item h3 {
+  color: #7e57c2;
+  font-size: 22px;
 }
 
-/* Descendant selector for paragraphs */
-.main-content .goal-box p {
-  color: #555;
+/* Paragraph font styling */
+.bucket-item p {
+  font-size: 16px;
+  color: #444;
 }
 
-/* CSS Visibility and Display example */
+/* Visibility and Display example */
 .hidden-box {
   visibility: hidden;
   display: none;
 }
 
-/* Footer */
+/* --- Footer --- */
 footer {
   clear: both;
-  background-color: #cce2cb; /* pastel mint */
   text-align: center;
   padding: 15px;
-  border-top: 2px solid #a8d5ba;
-  color: #3e4e50;
+  background-color: #dcedc8;
+  border-top: 2px solid #b6e2a1;
+  font-size: 14px;
 }
-
