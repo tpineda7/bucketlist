@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffafc;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ffe0e9; /* pastel pink */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #fbb1bd;
+}
+
+header h1 {
+  color: #d94f70;
+}
+
+/* Container Layout (float + clear) */
+.container {
+  overflow: auto; /* clearing floats */
+}
+
+/* Sidebar using float */
+.sidebar {
+  float: left;
+  width: 25%;
+  background-color: #d0f4de; /* pastel green */
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 2px solid #a0e4b0;
+}
+
+.sidebar h2 {
+  color: #379683;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  border-bottom: 1px solid #a0e4b0;
+}
+
+.sidebar ul li:hover {
+  background-color: #b8f2e6;
+  cursor: pointer;
+}
+
+/* Main Content using float */
+.main-content {
+  float: left;
+  width: 75%;
+  background-color: #f0eaff; /* pastel lavender */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Goal boxes - border, padding, dimension */
+.goal-box {
+  background-color: #faf4ff; /* light pastel purple */
+  border: 2px dashed #dab6fc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  width: 90%;
+}
+
+/* Child selector - pastel accent */
+.main-content > .goal-box h3 {
+  color: #a364a1;
+}
+
+/* Descendant selector for paragraphs */
+.main-content .goal-box p {
+  color: #555;
+}
+
+/* CSS Visibility and Display example */
+.hidden-box {
+  visibility: hidden;
+  display: none;
+}
+
+/* Footer */
+footer {
+  clear: both;
+  background-color: #cce2cb; /* pastel mint */
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #a8d5ba;
+  color: #3e4e50;
+}
+
