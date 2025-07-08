@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* --- Google Font --- */
+/* --- Google Font & Global Styles --- */
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
@@ -25,7 +25,7 @@ header h1 {
 
 /* --- Layout using float and clear --- */
 .container {
-  overflow: auto;
+  overflow: auto; /* clear floats */
 }
 
 .sidebar {
@@ -43,16 +43,28 @@ header h1 {
   color: #2d6a4f;
 }
 
-/* Styled links with pseudo-classes */
-.sidebar a {
+/* Styled Links + Pseudo-classes */
+.sidebar a:link {
   color: #287271;
   text-decoration: none;
   font-weight: bold;
 }
 
+.sidebar a:visited {
+  color: #4c5555;
+}
+
 .sidebar a:hover {
   color: #1c4e4c;
   text-decoration: underline;
+  background-color: #caf0f8;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.sidebar a:active {
+  color: #c2185b;
+  background-color: #ffd6e0;
 }
 
 /* --- Main Content with Background Image --- */
@@ -91,7 +103,7 @@ header h1 {
   color: #444;
 }
 
-/* Visibility and Display example */
+/* --- Visibility + Display --- */
 .hidden-box {
   visibility: hidden;
   display: none;
@@ -106,3 +118,50 @@ footer {
   border-top: 2px solid #b6e2a1;
   font-size: 14px;
 }
+
+/* --- Region Links Below Map --- */
+.region-links {
+  margin-top: 15px;
+  font-size: 16px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.region-links a:link {
+  color: #7e57c2;
+  text-decoration: none;
+}
+
+.region-links a:visited {
+  color: #6c5b7b;
+}
+
+.region-links a:hover {
+  color: #ff6f91;
+  text-decoration: underline;
+  background-color: #f8e1f4;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.region-links a:active {
+  color: #c2185b;
+  background-color: #ffe0e0;
+}
+
+/* --- Image Map Hover Enhancements --- */
+area {
+  cursor: pointer;
+}
+
+img[usemap] {
+  border: 3px solid transparent;
+  transition: border 0.3s ease;
+  display: block;
+  margin-bottom: 10px;
+}
+
+img[usemap]:hover {
+  border: 3px solid #ffd6e0;
+}
+
