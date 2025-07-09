@@ -44,24 +44,59 @@
       </div>
     </div>
   </div>
- <!-- Clickable Image Map -->
-<h2>Where I Want to Go</h2>
-<img src= "basemap.png" usemap="#worldmap" alt="World Map" width="600" />
+ <h2>Explore the World</h2>
+<p>Click on a region of the map to explore my future destinations:</p>
 
-<img src="images/world-map.jpg" usemap="#worldmap" alt="World Map" width="600" />
-<p>Click a region below to learn more:</p>
+<!-- Clickable Image Map -->
+<img src= "world-map.jpg" usemap="#worldmap" alt="World Map" width="800" />
 
 <map name="worldmap">
-  <area shape="rect" coords="70,100,150,160" href="https://en.wikipedia.org/wiki/Europe" alt="Europe" target="_blank" />
-  <area shape="rect" coords="200,140,280,180" href="https://en.wikipedia.org/wiki/Africa" alt="Africa" target="_blank" />
-  <area shape="rect" coords="350,100,450,150" href="https://en.wikipedia.org/wiki/Asia" alt="Asia" target="_blank" />
+  <!-- North America -->
+  <area shape="rect" coords="100,100,180,180"
+        href="#north-america"
+        alt="North America"
+        title="North America" />
+
+  <!-- South America -->
+  <area shape="rect" coords="150,220,220,320"
+        href="#south-america"
+        alt="South America"
+        title="South America" />
+
+  <!-- Europe -->
+  <area shape="rect" coords="350,100,430,160"
+        href="#europe"
+        alt="Europe"
+        title="Europe" />
+
+  <!-- Asia -->
+  <area shape="rect" coords="500,100,620,180"
+        href="#asia"
+        alt="Asia"
+        title="Asia" />
 </map>
 
-<div class="region-links">
-  <a href="https://en.wikipedia.org/wiki/Europe" target="_blank">Europe</a> |
-  <a href="https://en.wikipedia.org/wiki/Africa" target="_blank">Africa</a> |
-  <a href="https://en.wikipedia.org/wiki/Asia" target="_blank">Asia</a>
+
+<div id="north-america" class="bucket-item">
+  <h3>North America Goals</h3>
+  <p>Example: Visit the Grand Canyon or go whale watching in Canada.</p>
 </div>
+
+<div id="south-america" class="bucket-item">
+  <h3>South America Goals</h3>
+  <p>Example: Explore Machu Picchu or the Amazon rainforest.</p>
+</div>
+
+<div id="europe" class="bucket-item">
+  <h3>Europe Goals</h3>
+  <p>Example: Tour castles in Germany or eat pasta in Italy.</p>
+</div>
+
+<div id="asia" class="bucket-item">
+  <h3>Asia Goals</h3>
+  <p>Example: See cherry blossoms in Japan or visit temples in Thailand.</p>
+</div>
+
 
 <footer>
     <p>&copy; 2025 My Bucket List</p>
