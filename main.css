@@ -165,3 +165,45 @@ img[usemap]:hover {
   border: 3px solid #ffd6e0;
 }
 
+/* --- Table Styling --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  border: 2px solid #dab6fc;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #7e57c2;
+}
+
+th, td {
+  border: 1px solid #c9c9ff;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #e3dfff;
+}
+
+tbody tr:hover {
+  background-color: #f9f1ff;
+}
+
+/* --- Lists Styling --- */
+.styled-list {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #7a5ca0;
+}
+
+.numbered-list {
+  list-style-type: decimal-leading-zero;
+  padding-left: 20px;
+  color: #5e548e;
+}
