@@ -167,7 +167,45 @@
     document.getElementById("motivation").innerHTML = "Your next adventure is just a decision away! 🌍✈️";
   }
 </script>
+	
+<!-- NAVBAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">My List</a></li>
+      <li><a href="#">Submit Goal</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
+  <h1>Submit a Bucket List Item</h1>
+
+  <!-- FORM -->
+  <form class="styled-form" action="#" method="post">
+    <label for="goal">Your Dream:</label>
+    <input type="text" id="goal" name="goal" placeholder="e.g. Visit Japan" required>
+
+    <fieldset>
+      <legend>Category:</legend>
+      <label><input type="radio" name="category" value="travel" required> Travel</label>
+      <label><input type="radio" name="category" value="adventure"> Adventure</label>
+      <label><input type="radio" name="category" value="personal"> Personal</label>
+    </fieldset>
+
+    <label><input type="checkbox" name="important"> Mark as a top priority</label>
+
+    <button type="submit">Add to List</button>
+  </form>
+
+  <!-- AUDIO -->
+  <div class="audio-container">
+    <h2>Motivation Boost 🎧</h2>
+    <audio controls>
+      <source src="inspiration.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+	
 <footer>
     <p>&copy; 2025 My Bucket List</p>
   </footer>

@@ -207,3 +207,60 @@ tbody tr:hover {
   padding-left: 20px;
   color: #5e548e;
 }
+/* NAVBAR */
+.navbar {
+  background-color: #ffd6e0;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #5a3e87;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: #a84fa1;
+}
+
+/* FORM */
+.styled-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ffd6e0;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="radio"],
+.styled-form input[type="checkbox"] {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.styled-form button {
+  background-color: #b497d6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.styled-form button:hover {
+  background-color: #a47cc0;
+}
+
+/* AUDIO */
+.audio-container {
+  margin-top: 30px;
+}
