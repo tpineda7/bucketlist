@@ -264,3 +264,39 @@ tbody tr:hover {
 .audio-container {
   margin-top: 30px;
 }
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0;
+  background-color: #f9eaff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffeaf2;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.flex-item {
+  background-color: #fff;
+  border: 2px solid #e1bee7;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* jQuery UI styling override if needed */
+#accordion {
+  width: 80%;
+  margin: 0 auto 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+}

@@ -6,6 +6,11 @@
   <link rel="stylesheet" href="main.css">
 	<!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+	<!-- jQuery & jQuery UI CDN -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
 </head>
 <body>
   <header>
@@ -206,6 +211,32 @@
     </audio>
   </div>
 	
+<!-- FLEXBOX SECTION -->
+<section class="flex-container-row">
+  <div class="flex-item">Bucket Goal 1</div>
+  <div class="flex-item">Bucket Goal 2</div>
+  <div class="flex-item">Bucket Goal 3</div>
+</section>
+
+<section class="flex-container-column">
+  <div class="flex-item">🌎 Travel to Japan</div>
+  <div class="flex-item">📚 Write a book</div>
+  <div class="flex-item">💪 Run a marathon</div>
+</section>
+
+<!-- jQuery UI Object -->
+<div id="accordion">
+  <h3>Why Make a Bucket List?</h3>
+  <div><p>It helps you visualize your goals and live intentionally.</p></div>
+  <h3>How to Use This Website?</h3>
+  <div><p>Add, track, and check off your dreams in a simple, beautiful way.</p></div>
+</div>
+	<script>
+  $(function() {
+    $("#accordion").accordion();
+  });
+</script>
+
 <footer>
     <p>&copy; 2025 My Bucket List</p>
   </footer>
