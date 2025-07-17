@@ -1,288 +1,63 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* --- Google Font & Global Styles --- */
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff5fb;
   margin: 0;
-  background-color: #fffafc;
-  color: #333;
-}
-
-/* --- Header --- */
-header {
-  background-color: #ffe0f0;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid #fcbfd8;
-}
-
-header h1 {
-  margin: 0;
-  color: #d45c8e;
-  font-size: 36px;
-}
-
-/* --- Layout using float and clear --- */
-.container {
-  overflow: auto; /* clear floats */
-}
-
-.sidebar {
-  float: left;
-  width: 25%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #d0f4de;
-  border-right: 2px solid #a0e4b0;
-}
-
-/* Descendant selector */
-.sidebar ul li {
-  margin: 10px 0;
-  color: #2d6a4f;
-}
-
-/* Styled Links + Pseudo-classes */
-.sidebar a:link {
-  color: #287271;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.sidebar a:visited {
-  color: #4c5555;
-}
-
-.sidebar a:hover {
-  color: #1c4e4c;
-  text-decoration: underline;
-  background-color: #caf0f8;
-  padding: 2px 4px;
-  border-radius: 4px;
-}
-
-.sidebar a:active {
-  color: #c2185b;
-  background-color: #ffd6e0;
-}
-
-/* --- Main Content with Background Image --- */
-.main-content {
-  float: left;
-  width: 75%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #f0eaff;
-  background-image: url('images/pastel-bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: lighten;
-}
-
-/* --- Bucket List Boxes --- */
-.bucket-item {
-  border: 2px dashed #dab6fc;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  width: 90%;
-}
-
-/* Child selector */
-.main-content > .bucket-item h3 {
-  color: #7e57c2;
-  font-size: 22px;
-}
-
-/* Paragraph font styling */
-.bucket-item p {
-  font-size: 16px;
-  color: #444;
-}
-
-/* --- Visibility + Display --- */
-.hidden-box {
-  visibility: hidden;
-  display: none;
-}
-
-/* --- Footer --- */
-footer {
-  clear: both;
-  text-align: center;
-  padding: 15px;
-  background-color: #dcedc8;
-  border-top: 2px solid #b6e2a1;
-  font-size: 14px;
-}
-
-/* --- Region Links Below Map --- */
-.region-links {
-  margin-top: 15px;
-  font-size: 16px;
-  padding-bottom: 20px;
-  text-align: left;
-}
-
-.region-links a:link {
-  color: #7e57c2;
-  text-decoration: none;
-}
-
-.region-links a:visited {
-  color: #6c5b7b;
-}
-
-.region-links a:hover {
-  color: #ff6f91;
-  text-decoration: underline;
-  background-color: #f8e1f4;
-  padding: 2px 6px;
-  border-radius: 5px;
-}
-
-.region-links a:active {
-  color: #c2185b;
-  background-color: #ffe0e0;
-}
-
-/* --- Image Map Hover Enhancements --- */
-area {
-  cursor: pointer;
-}
-
-img[usemap] {
-  border: 3px solid transparent;
-  transition: border 0.3s ease;
-  display: block;
-  margin-bottom: 10px;
-}
-
-img[usemap]:hover {
-  border: 3px solid #ffd6e0;
-}
-
-/* --- Table Styling --- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  background-color: #fff;
-  border: 2px solid #dab6fc;
-}
-
-caption {
-  caption-side: top;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #7e57c2;
-}
-
-th, td {
-  border: 1px solid #c9c9ff;
-  padding: 10px;
-  text-align: left;
-}
-
-thead {
-  background-color: #e3dfff;
-}
-
-tbody tr:hover {
-  background-color: #f9f1ff;
-}
-
-/* --- Lists Styling --- */
-.styled-list {
-  list-style-type: square;
-  padding-left: 20px;
-  color: #7a5ca0;
-}
-
-.numbered-list {
-  list-style-type: decimal-leading-zero;
-  padding-left: 20px;
-  color: #5e548e;
-}
-/* NAVBAR */
-.navbar {
-  background-color: #ffd6e0;
-  padding: 10px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-}
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
   padding: 0;
 }
-.navbar a {
-  text-decoration: none;
-  color: #5a3e87;
-  font-weight: bold;
-}
-.navbar a:hover {
-  color: #a84fa1;
-}
 
-/* FORM */
-.styled-form {
-  background-color: #fff;
-  padding: 20px;
-  border: 2px solid #ffd6e0;
-  border-radius: 10px;
-  max-width: 500px;
-  margin-bottom: 30px;
-}
-
-.styled-form input[type="text"],
-.styled-form input[type="radio"],
-.styled-form input[type="checkbox"] {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.styled-form button {
-  background-color: #b497d6;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.styled-form button:hover {
-  background-color: #a47cc0;
-}
-
-/* AUDIO */
-.audio-container {
-  margin-top: 30px;
-}
-
-.flex-container-row {
+nav {
+  background-color: #e1bee7;
+  padding: 15px 20px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  margin: 20px 0;
-  background-color: #f9eaff;
-  padding: 15px;
-  border-radius: 10px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+nav a {
+  text-decoration: none;
+  color: #4a148c;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+  margin: 5px;
+}
+
+nav a:hover {
+  color: #d81b60;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1.title {
+  text-align: center;
+  color: #880e4f;
+}
+
+.flex-container-row,
 .flex-container-column {
   display: flex;
-  flex-direction: column;
   gap: 10px;
   background-color: #ffeaf2;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.flex-container-row {
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f9eaff;
+}
+
+.flex-container-column {
+  flex-direction: column;
 }
 
 .flex-item {
@@ -291,12 +66,78 @@ tbody tr:hover {
   border-radius: 8px;
   padding: 10px;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-size: 1.1em;
 }
 
-/* jQuery UI styling override if needed */
 #accordion {
   width: 80%;
   margin: 0 auto 40px auto;
-  font-family: 'Segoe UI', sans-serif;
+}
+
+#weather,
+#quote {
+  background: #fce4ec;
+  padding: 15px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.add-goal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-goal input,
+.add-goal select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-goal button {
+  padding: 10px 15px;
+  background-color: #ba68c8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-goal button:hover {
+  background-color: #9c27b0;
+}
+
+/* 📱 Mobile Styles */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .flex-container-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-item {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  #accordion {
+    width: 95%;
+  }
+}
+
+/* 💻 Tablet Styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .flex-item {
+    font-size: 1em;
+  }
 }

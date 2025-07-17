@@ -2,244 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Bucket List</title>
-  <link rel="stylesheet" href="main.css">
-	<!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-	<!-- jQuery & jQuery UI CDN -->
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bucket Goals</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
-    <h1>My Bucket List</h1>
-  </header>
-
-  <div class="container">
-    <div class="sidebar">
-      <h2>Categories</h2>
-      <ul>
-        <li>Travel</li>
-        <li>Adventure</li>
-        <li>Learning</li>
-        <li>Hobbies</li>
-      </ul>
-		 <p><a href="https://www.google.com">Search Ideas</a></p>
-    </div>
-
-    <div class="main-content">
-      <h2>My Bucket List</h2>
-
-      <div class="bucket-item">
-        <h3>Travel to Costa Rica</h3>
-        <p>I heard it is a safe place to travel, weather is nice and has beautiful beaches. </p>
-      </div>
-
-      <div class="bucket-item">
-        <h3>Drive a Lamborghini on a race track</h3>
-        <p>Set aside savings to rent a Lamborghini for my birthday next year. </p>
-      </div>
-
-      <div class="bucket-item hidden-box">
-        <h3>Create a successful app </h3>
-        <p>Brainstorm ideas, put together a mockup website and app. 
-           Create a business plan to pitch to business investors. </p>
-      </div>
-    </div>
-  </div>
- <h2>Explore the World</h2>
-<p>Click on a region of the map to explore my future destinations:</p>
-
-<!-- Clickable Image Map -->
-<img src= "world-map.jpg" usemap="#worldmap" alt="World Map" width="800" />
-
-<map name="worldmap">
-  <!-- North America -->
-  <area shape="rect" coords="100,100,180,180"
-        href="#north-america"
-        alt="North America"
-        title="North America" />
-
-  <!-- South America -->
-  <area shape="rect" coords="150,220,220,320"
-        href="#south-america"
-        alt="South America"
-        title="South America" />
-
-  <!-- Europe -->
-  <area shape="rect" coords="350,100,430,160"
-        href="#europe"
-        alt="Europe"
-        title="Europe" />
-
-  <!-- Asia -->
-  <area shape="rect" coords="500,100,620,180"
-        href="#asia"
-        alt="Asia"
-        title="Asia" />
-</map>
-
-
-<div id="north-america" class="bucket-item">
-  <h3>North America</h3>
-  <p>Visit the Grand Canyon and other famous landmarks on a road trip.</p>
-</div>
-
-<div id="south-america" class="bucket-item">
-  <h3>South America</h3>
-  <p>Explore Machu Picchu and other famous landmarks across South America.</p>
-</div>
-
-<div id="europe" class="bucket-item">
-  <h3>Europe</h3>
-  <p>Tour castles in Germany and eat pasta in Italy.</p>
-</div>
-
-<div id="asia" class="bucket-item">
-  <h3>Asia</h3>
-  <p>See cherry blossoms in Japan, explore Hong Kong and visit temples in Thailand.</p>
-</div>
-
-<h2>Bucket List Comparison 🌍✨</h2>
-<table>
-  <caption>Top Travel Goals by Region</caption>
-  <thead>
-    <tr>
-      <th scope="col">Region</th>
-      <th scope="col">Top Destination</th>
-      <th scope="col">Activity</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>North America</td>
-      <td>Canada</td>
-      <td>See the Northern Lights</td>
-    </tr>
-    <tr>
-      <td>South America</td>
-      <td>Peru</td>
-      <td>Hike Machu Picchu</td>
-    </tr>
-    <tr>
-      <td>Europe</td>
-      <td>Italy</td>
-      <td>Eat authentic pasta 🍝</td>
-    </tr>
-    <tr>
-      <td>Asia</td>
-      <td>Japan</td>
-      <td>See cherry blossoms 🌸</td>
-    </tr>
-    <tr>
-      <td>Australia</td>
-      <td>Sydney</td>
-      <td>Visit the Opera House</td>
-    </tr>
-  </tbody>
-</table>
-<h2>Top 5 Bucket List Activities (Unordered)</h2>
-<ul class="styled-list">
-  <li>Skydive over Dubai</li>
-  <li>Snorkel the Great Barrier Reef</li>
-  <li>Eat sushi in Tokyo 🍣</li>
-  <li>Camp under the stars in Patagonia</li>
-  <li>Ride a hot air balloon in Cappadocia 🎈</li>
-</ul>
-
-<h2>Steps to Plan a Trip (Ordered)</h2>
-<ol class="numbered-list">
-  <li>Choose your destination</li>
-  <li>Set a travel budget</li>
-  <li>Book flights and hotels</li>
-  <li>Create an itinerary</li>
-  <li>Pack your bags!</li>
-</ol>
-<h2>Inspiration from Around the World</h2>
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/Scxs7L0vhZ4"
-  title="YouTube travel video"
-  frameborder="0"
-  allowfullscreen></iframe>
-<h2>Try This!</h2>
-<button onclick="showMessage()">Click for Travel Motivation</button>
-<p id="motivation"></p>
-
-<script>
-  function showMessage() {
-    document.getElementById("motivation").innerHTML = "Your next adventure is just a decision away! 🌍✈️";
-  }
-</script>
-	
-<!-- NAVBAR -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">My List</a></li>
-      <li><a href="#">Submit Goal</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Bucket List</a>
+    <a href="#">Contact</a>
   </nav>
 
-  <h1>Submit a Bucket List Item</h1>
+  <div class="container">
+    <h1 class="title">🌟 Bucket Goals 🌟</h1>
 
-  <!-- FORM -->
-  <form class="styled-form" action="#" method="post">
-    <label for="goal">Your Dream:</label>
-    <input type="text" id="goal" name="goal" placeholder="e.g. Visit Japan" required>
+    <section id="weather">
+      <h2>Current Weather in San Antonio, TX</h2>
+      <p id="weather-data">Loading...</p>
+    </section>
 
-    <fieldset>
-      <legend>Category:</legend>
-      <label><input type="radio" name="category" value="travel" required> Travel</label>
-      <label><input type="radio" name="category" value="adventure"> Adventure</label>
-      <label><input type="radio" name="category" value="personal"> Personal</label>
-    </fieldset>
+    <section id="quote">
+      <h2>Inspirational Quote</h2>
+      <p id="quote-data">Loading...</p>
+    </section>
 
-    <label><input type="checkbox" name="important"> Mark as a top priority</label>
+    <section class="flex-container-row" id="goal-list-row">
+      <div class="flex-item">Visit Paris</div>
+      <div class="flex-item">Learn Guitar</div>
+      <div class="flex-item">Skydiving</div>
+    </section>
 
-    <button type="submit">Add to List</button>
-  </form>
+    <section class="add-goal">
+      <input type="text" id="new-goal" placeholder="Add new goal...">
+      <select id="goal-section">
+        <option value="row">Row</option>
+        <option value="column">Column</option>
+        <option value="both">Both</option>
+      </select>
+      <button id="add-goal-btn">Add Goal</button>
+    </section>
 
-  <!-- AUDIO -->
-  <div class="audio-container">
-    <h2>Motivation Boost 🎧</h2>
-    <audio controls>
-      <source src="inspiration.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    <section class="flex-container-column" id="goal-list-column">
+      <div class="flex-item">🗺️ Travel the world</div>
+      <div class="flex-item">📚 Read 100 books</div>
+      <div class="flex-item">🧁 Take a baking class</div>
+    </section>
+
+    <div id="accordion">
+      <h3>Why Make a Bucket List?</h3>
+      <div><p>It helps you visualize your goals and live intentionally.</p></div>
+      <h3>How to Use This Website?</h3>
+      <div><p>Add, track, and check off your dreams in a simple, beautiful way.</p></div>
+    </div>
   </div>
-	
-<!-- FLEXBOX SECTION -->
-<section class="flex-container-row">
-  <div class="flex-item">Bucket Goal 1</div>
-  <div class="flex-item">Bucket Goal 2</div>
-  <div class="flex-item">Bucket Goal 3</div>
-</section>
 
-<section class="flex-container-column">
-  <div class="flex-item">🌎 Travel to Japan</div>
-  <div class="flex-item">📚 Write a book</div>
-  <div class="flex-item">💪 Run a marathon</div>
-</section>
+  <script>
+    $(function () {
+      $("#accordion").accordion();
+    });
 
-<!-- jQuery UI Object -->
-<div id="accordion">
-  <h3>Why Make a Bucket List?</h3>
-  <div><p>It helps you visualize your goals and live intentionally.</p></div>
-  <h3>How to Use This Website?</h3>
-  <div><p>Add, track, and check off your dreams in a simple, beautiful way.</p></div>
-</div>
-	<script>
-  $(function() {
-    $("#accordion").accordion();
+    document.getElementById("add-goal-btn").addEventListener("click", function () {
+      const goalText = document.getElementById("new-goal").value.trim();
+      const location = document.getElementById("goal-section").value;
+      if (goalText) {
+        const newItem = document.createElement("div");
+        newItem.className = "flex-item";
+        newItem.textContent = goalText;
+
+        if (location === "row" || location === "both") {
+          document.getElementById("goal-list-row").appendChild(newItem.cloneNode(true));
+        }
+        if (location === "column" || location === "both") {
+          document.getElementById("goal-list-column").appendChild(newItem);
+        }
+
+        document.getElementById("new-goal").value = "";
+      }
+    });
+
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=San%20Antonio,TX,US&units=imperial&appid=8a0ea1656782c334ce1a2df50289a34d")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("weather-data").innerHTML =
+          `🌡️ ${data.main.temp}°F - ${data.weather[0].description}`;
+      })
+      .catch(() => {
+        document.getElementById("weather-data").innerText = "Failed to load weather data.";
+      });
+fetch("https://api.quotable.io/random")
+  .then(response => {
+    if (!response.ok) throw new Error("API error");
+    return response.json();
+  })
+  .then(data => {
+    document.getElementById("quote-data").innerText = `"${data.content}" — ${data.author}`;
+  })
+  .catch(error => {
+    document.getElementById("quote-data").innerText = `"Believe you can and you're halfway there." — Theodore Roosevelt`;
   });
-</script>
 
+    </script>
+</body>
+</html>
+	
+	
 <footer>
     <p>&copy; 2025 My Bucket List</p>
   </footer>
-</body>
-</html>
 
+
+ 
